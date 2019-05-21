@@ -1,0 +1,231 @@
+*{
+    font-family: Century Gothic;
+}
+.container{
+    // background: white;
+    // background: url(../assets/bg.jpg);
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+}
+.left-tab{
+    float: left;
+    width: 500px;
+    height: 100vh;
+    background-color: #202020;
+    color: #fff;
+    margin: 0;
+}
+.picture img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: solid 5px white;
+    overflow: hidden;
+}
+.picture{
+    text-align: center;
+    padding: 6vh 0px;
+}
+.picture h1{
+    padding: 20px 0px;
+    margin: 2px 0px;
+    font-weight: normal;
+    font-size: 30px;
+}
+.picture span{
+    color: rgb(95, 197, 109);
+    padding-right: 10px;
+}
+.contacts{
+
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+}
+.social-contact{
+    display: flex;
+}
+.social-contact img{
+    width: 25px;
+    padding: 5px 0px;
+}
+.det{
+    padding: 8px 10px;
+}
+.info{
+   width: 80%;
+    height: auto;
+    margin: 10px auto;
+}
+.info p{
+    line-height: 30px;
+    margin: 0px 0px 0px 10px;
+}
+.line{
+    width: 80%;
+    height: 5px;
+    background: rgba(95, 197, 109, 0.5);
+    margin: 10px auto;
+    border-radius: 20px;
+}
+.icons{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+.right-tab{
+    color:#171717;
+    height: auto;
+    width: 95%;;
+    overflow-y: auto;
+}
+.right-tab h1{
+    letter-spacing: 10px;
+}
+.divider{
+    display: flex;
+    flex-flow: column;
+    width: 10px;
+}
+.right-tab h1{
+    text-align: center;
+    padding: 5vh 0px;
+}
+.profile-details{
+    width: 100%;
+    padding: 50px 0px;
+    text-align: center;
+    margin: 3vh auto;
+    border-bottom: solid 5px rgba(0,0,0,0.1);
+}
+.profile-details p{
+    padding: 0px 40px;
+}
+.sub-section .details li{
+    list-style: none;
+}
+.sections{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 5vh auto;
+}
+.sections .sub-section{
+    margin: 10px;
+    width: 50%;
+    padding: 0px 15px;
+}
+
+.sections .header{
+    margin-bottom: 30px;
+}
+.sections .header h5{
+    margin: 20px 0px;
+}
+@media screen and (max-width: 1000px){
+    .picture h1{
+        font-size: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .left-tab{
+        width: 100%;
+        text-align: center;
+        border-bottom: solid 1px #fff;
+    }
+}
+@media screen and (max-width: 800px){
+    .sections{
+        flex-direction: column;
+    }
+    .sections .sub-section{
+        background: rgba(0, 0, 0, 0.1);
+        width: 90%;
+        border-radius: 5px;
+    }
+    .sections .sub-section:hover{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+    }
+    .c-trigger{
+        background: rgba(34, 131, 99, 0.925);
+    }
+}
+.me-button{
+    cursor: pointer;
+    margin: 5px auto;
+    width: 200px;
+    padding: 10px 5px;
+    border: solid 2px white;
+    color: white;
+    transition: 0.3s;
+    text-align: center !important;
+}
+.me-button:hover{
+    background:rgb(95, 197, 109);
+    border: solid 2px rgb(95, 197, 109);
+    transition: 0.3s;
+}
+.me-button-2{
+    cursor: pointer;
+    margin: 5px auto;
+    width: 200px;
+    padding: 10px 5px;
+    border: solid 2px white;
+    color: white;
+    transition: 0.3s;
+    text-align: center !important;
+    opacity: 0;
+    transition: 0.2s;
+    background-color: transparent;
+}
+.c-trigger:hover .me-button-2{
+    opacity: 1;
+    transition: 0.7s;
+}
+.me-button-2:hover{
+    background:rgb(95, 197, 109);
+    border: solid 2px rgb(95, 197, 109);
+    transition: 0.3s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.c-trigger{
+    position: fixed;
+    right: 0;
+    width: 40px;
+    height: 100vh;
+    background: #171717;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.c-trigger .rot-text{
+    z-index: 5;
+    text-align: left;
+    position: absolute;
+    top: 50vh;
+    padding: 20px 10px;
+    height: 20px;
+    width: 100px;
+    color: white;
+    transform: rotate(-90deg);
+    margin: 0px 0px 0px -40px;
+    background: red;
+}
+.contact{
+    width: 400px;
+    height: 100vh;
+    background: rgba(49, 44, 44, 0.2);
+    position: absolute;
+    right: 0;
+}
