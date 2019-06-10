@@ -20,7 +20,7 @@ import { CvPageComponent } from './cv-page/cv-page.component';
     AppRoutingModule,
     RouterModule.forRoot([
       {path: 'contact-me', component: ContactMeComponent},
-      {path: 'cv-page', component: CvPageComponent} 
+      {path: '', component: CvPageComponent}
     ])
   ],
   providers: [],
